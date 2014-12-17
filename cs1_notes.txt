@@ -1,0 +1,26 @@
+attempt : 
+    installed qconf :
+        sudo apt-get install gridengine-client          WRONG
+
+    installed bison
+        sudo apt-get install bison
+
+
+    installed flex
+        sudo apt-get install flex
+
+make defconfig                          OK
+make pcd                                FAIL
+
+    add
+    #include <sys/resource.h>  
+    to process.c and it works now. 
+
+make pcd                                OK
+
+=== now for microblaze ===
+edit .config file : 
+CONFIG_PCD_CROSS_COMPILER_PREFIX="microblazeel-xilinx-linux-gnu-"
+CONFIG_PCD_PLATFORM_OTHER=y
+
+that's it

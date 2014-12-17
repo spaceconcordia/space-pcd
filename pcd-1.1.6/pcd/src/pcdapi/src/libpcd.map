@@ -1,0 +1,372 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+LOAD pcdapi.o
+LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/libgcc.a
+LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/../../../../microblazeel-xilinx-linux-gnu/lib/libgcc_s.so
+LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc.so
+START GROUP
+LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/lib/libc.so.6
+LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a
+LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/lib/ld.so.1
+END GROUP
+LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/libgcc.a
+LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/../../../../microblazeel-xilinx-linux-gnu/lib/libgcc_s.so
+LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+                0x00000094                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x00000094      0x190
+ *(.hash)
+ .hash          0x00000094      0x190 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000224      0x3d0
+ *(.dynsym)
+ .dynsym        0x00000224      0x3d0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.dynstr         0x000005f4      0x2c4
+ *(.dynstr)
+ .dynstr        0x000005f4      0x2c4 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.gnu.version    0x000008b8       0x7a
+ *(.gnu.version)
+ .gnu.version   0x000008b8       0x7a /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.gnu.version_d  0x00000934        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.gnu.version_r  0x00000934       0x30
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000934       0x30 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.rel.dyn
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+
+.rela.dyn       0x00000964      0x1a4
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel
+                0x00000964        0xc /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000970      0x198 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt       0x00000b08      0x174
+ *(.rela.plt)
+ .rela.plt      0x00000b08      0x174 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.init           0x00000c7c       0x58
+ *(.init)
+ .init          0x00000c7c       0x30 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+                0x00000c7c                _init
+ .init          0x00000cac        0xc /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ .init          0x00000cb8        0xc /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+ .init          0x00000cc4       0x10 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+
+.plt            0x00000cd4      0x204
+ *(.plt)
+ .plt           0x00000cd4      0x204 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+
+.iplt
+ *(.iplt)
+
+.text           0x00000ed8      0xed8
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000ed8        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ .text          0x00000ed8      0x134 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ .text          0x0000100c      0xd50 pcdapi.o
+                0x000015b8                PCD_api_start_process
+                0x000015f8                PCD_api_signal_process
+                0x00001638                PCD_api_terminate_process
+                0x00001678                PCD_api_terminate_process_non_blocking
+                0x000016b8                PCD_api_kill_process
+                0x000016f8                PCD_api_send_process_ready
+                0x00001748                PCD_api_get_rule_state
+                0x00001790                PCD_api_register_exception_handlers
+                0x000019e8                PCD_api_find_process_id
+                0x00001b5c                PCD_api_reboot
+                0x00001cd4                PCD_api_reduce_net_rx_priority
+                0x00001d18                PCD_api_restore_net_rx_priority
+ .text          0x00001d5c       0x54 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+ .text          0x00001db0        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+ *(.gnu.warning)
+
+.fini           0x00001db0       0x34
+ *(.fini)
+ .fini          0x00001db0       0x18 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+                0x00001db0                _fini
+ .fini          0x00001dc8        0xc /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ .fini          0x00001dd4       0x10 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+                0x00001de4                PROVIDE (__etext, .)
+                0x00001de4                PROVIDE (_etext, .)
+                0x00001de4                PROVIDE (etext, .)
+
+.rodata         0x00001de4      0x176
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00001de4      0x176 pcdapi.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x00001f5c        0x0
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+
+.eh_frame       0x00001f5c        0x4
+ *(.eh_frame)
+ .eh_frame      0x00001f5c        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00001f60                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x00002000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*))
+ *(.init_array)
+
+.fini_array
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+
+.ctors          0x00002000        0x8
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ .ctors         0x00002000        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x00002004        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+
+.dtors          0x00002008        0x8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ .dtors         0x00002008        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0000200c        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+                0x0000200c                __DTOR_END__
+
+.jcr            0x00002010        0x4
+ *(.jcr)
+ .jcr           0x00002010        0x0 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ .jcr           0x00002010        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00002014       0xc8
+ *(.dynamic)
+ .dynamic       0x00002014       0xc8 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+                0x00002014                _DYNAMIC
+
+.got            0x000020dc       0x88
+ *(.got)
+ .got           0x000020dc       0x88 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ *(.igot)
+                0x00002164                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x00002164       0x88
+ *(.got.plt)
+ .got.plt       0x00002164       0x88 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+                0x00002164                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+
+.data           0x000021ec       0x10
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000021ec        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ .data          0x000021ec        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ .data.rel      0x000021f0        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+                0x000021f0                __dso_handle
+ .data          0x000021f4        0x4 pcdapi.o
+                0x000021f4                verboseOutput
+ .data          0x000021f8        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+ .data          0x000021fc        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+
+.data1
+ *(.data1)
+                0x000021fc                _edata = .
+                0x000021fc                PROVIDE (edata, .)
+                0x000021fc                __bss_start = .
+
+.bss            0x000021fc       0x5c
+ *(.dynbss)
+ .dynbss        0x000021fc        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000021fc        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
+ .bss           0x000021fc        0x8 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbeginS.o
+ .bss           0x00002204       0x52 pcdapi.o
+ .bss           0x00002256        0x0 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtendS.o
+ .bss           0x00002256        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+ *(COMMON)
+                0x00002258                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x00002256        0x2 00
+                0x00002258                . = ALIGN (0x4)
+                0x00002258                . = ALIGN (0x4)
+                0x00002258                _end = .
+                0x00002258                PROVIDE (end, .)
+                0x00002258                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 pcdapi.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0xfa1
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0xfa1 pcdapi.o
+
+.debug_abbrev   0x00000000      0x29f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x29f pcdapi.o
+
+.debug_line     0x00000000      0x988
+ *(.debug_line)
+ .debug_line    0x00000000      0x988 pcdapi.o
+
+.debug_frame    0x00000000      0x1bc
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x1bc pcdapi.o
+
+.debug_str      0x00000000      0x99b
+ *(.debug_str)
+ .debug_str     0x00000000      0x99b pcdapi.o
+                                0xa2b (size before relaxing)
+
+.debug_loc      0x00000000      0x96e
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x96e pcdapi.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x58
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x58 pcdapi.o
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(libpcd.so elf32-microblazeel)
