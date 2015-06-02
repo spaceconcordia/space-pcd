@@ -13,7 +13,7 @@
 #define CONFIG_PCD_PLATFORM_OTHER 1
 #define CONFIG_PCD_MAX_PARAM_SIZE 256
 #define CONFIG_PCD_SERVER_NAME "pcd-server"
-#define CONFIG_PCD_CROSS_COMPILER_PREFIX "microblazeel-xilinx-linux-gnu-"
+#define CONFIG_PCD_CROSS_COMPILER_PREFIX "/usr/local/lib/mbgcc/bin/microblazeel-xilinx-linux-gnu-gcc"
 #define CONFIG_PCD_OWNER_ID 3085
 #define CONFIG_PCD_USE_FORK 1
 #define CONFIG_PCD_PRIORITY 1

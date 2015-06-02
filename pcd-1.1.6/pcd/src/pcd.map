@@ -1,18 +1,71 @@
-Archive member included because of file (symbol)
+Archive member included to satisfy reference by file (symbol)
 
-/usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a(elf-init.oS)
-                              /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o (__libc_csu_init)
+/usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o (__libc_csu_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libipc.so                     pcd_api.o (IPC_set_owner)
+libpcd.so                     main.o (PCD_api_find_process_id)
+librt.so.1                    process.o (clock_gettime@@GLIBC_2.2)
+libc.so.6                     condchk.o (socket@@GLIBC_2.0)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 condchk.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 errlog.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 except.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 failact.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 misc.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 parser.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 pcd_api.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 process.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 rules_db.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 timer.o
+ .group         0x0000000000000000        0x8 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
 
 Memory Configuration
 
 Name             Origin             Length             Attributes
-*default*        0x00000000         0xffffffff
+*default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
 
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
-LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
 LOAD condchk.o
 LOAD errlog.o
 LOAD except.o
@@ -24,355 +77,436 @@ LOAD pcd_api.o
 LOAD process.o
 LOAD rules_db.o
 LOAD timer.o
-LOAD /home/samsara/pcd-1.1.6/ipc/src/libipc.so
-LOAD /home/samsara/pcd-1.1.6/pcd/src/pcdapi/src/libpcd.so
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/librt.so
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc.so
+LOAD /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/ipc/src/libipc.so
+LOAD /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/pcd/src/pcdapi/src/libpcd.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/librt.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/libc.so
 START GROUP
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/lib/libc.so.6
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/lib/ld.so.1
+LOAD /lib/i386-linux-gnu/libc.so.6
+LOAD /usr/lib/i386-linux-gnu/libc_nonshared.a
+LOAD /lib/i386-linux-gnu/ld-linux.so.2
 END GROUP
-LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/libgcc.a
-LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/../../../../microblazeel-xilinx-linux-gnu/lib/libgcc_s.so
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/libgcc.a
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/libgcc_s.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/libc.so
 START GROUP
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/lib/libc.so.6
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/lib/ld.so.1
+LOAD /lib/i386-linux-gnu/libc.so.6
+LOAD /usr/lib/i386-linux-gnu/libc_nonshared.a
+LOAD /lib/i386-linux-gnu/ld-linux.so.2
 END GROUP
-LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/libgcc.a
-LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/../../../../microblazeel-xilinx-linux-gnu/lib/libgcc_s.so
-LOAD /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
-LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
-                0x10000000                PROVIDE (__executable_start, 0x10000000)
-                0x100000f4                . = (0x10000000 + SIZEOF_HEADERS)
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/libgcc.a
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/libgcc_s.so
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048154                . = (0x8048000 + SIZEOF_HEADERS)
 
-.interp         0x100000f4        0xd
+.interp         0x0000000008048154       0x13
  *(.interp)
- .interp        0x100000f4        0xd /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+ .interp        0x0000000008048154       0x13 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.note.ABI-tag   0x10000104       0x20
- .note.ABI-tag  0x10000104       0x20 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+.note.ABI-tag   0x0000000008048168       0x20
+ .note.ABI-tag  0x0000000008048168       0x20 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
 .note.gnu.build-id
+                0x0000000008048188       0x24
  *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000008048188       0x24 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.hash           0x10000124      0x294
+.hash
  *(.hash)
- .hash          0x10000124      0x294 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
 
-.gnu.hash
+.gnu.hash       0x00000000080481ac       0x50
  *(.gnu.hash)
+ .gnu.hash      0x00000000080481ac       0x50 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.dynsym         0x100003b8      0x600
+.dynsym         0x00000000080481fc      0x660
  *(.dynsym)
- .dynsym        0x100003b8      0x600 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+ .dynsym        0x00000000080481fc      0x660 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.dynstr         0x100009b8      0x3a6
+.dynstr         0x000000000804885c      0x45a
  *(.dynstr)
- .dynstr        0x100009b8      0x3a6 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+ .dynstr        0x000000000804885c      0x45a /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.gnu.version    0x10000d5e       0xc0
+.gnu.version    0x0000000008048cb6       0xcc
  *(.gnu.version)
- .gnu.version   0x10000d5e       0xc0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+ .gnu.version   0x0000000008048cb6       0xcc /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.gnu.version_d  0x10000e20        0x0
+.gnu.version_d  0x0000000008048d84        0x0
  *(.gnu.version_d)
  .gnu.version_d
-                0x00000000        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.gnu.version_r  0x10000e20       0x60
+.gnu.version_r  0x0000000008048d84       0x90
  *(.gnu.version_r)
  .gnu.version_r
-                0x10000e20       0x60 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+                0x0000000008048d84       0x90 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.rel.dyn        0x10000e80        0x0
+.rel.dyn        0x0000000008048e14       0x28
  *(.rel.init)
  *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+ .rel.text.startup
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
  *(.rel.fini)
  *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
- *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
  *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
  *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
  *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
  *(.rel.ctors)
  *(.rel.dtors)
  *(.rel.got)
+ .rel.got       0x0000000008048e14        0x8 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
  *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
-                0x10000e80                PROVIDE (__rel_iplt_start, .)
- *(.rel.iplt)
-                0x10000e80                PROVIDE (__rel_iplt_end, .)
-                0x10000e80                PROVIDE (__rela_iplt_start, .)
-                0x10000e80                PROVIDE (__rela_iplt_end, .)
+ .rel.bss       0x0000000008048e1c       0x20 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+ *(.rel.ifunc)
 
-.rela.dyn       0x10000e80       0x54
- *(.rela.init)
- *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
- .rela.text     0x00000000        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
- .rela.text.startup
-                0x00000000        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
- *(.rela.fini)
- *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
- *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
- *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
- *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
- *(.rela.ctors)
- *(.rela.dtors)
- *(.rela.got)
- .rela.got      0x10000e80       0x24 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
- *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
- .rela.bss      0x10000ea4       0x30 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x10000ed4                PROVIDE (__rel_iplt_start, .)
-                0x10000ed4                PROVIDE (__rel_iplt_end, .)
-                0x10000ed4                PROVIDE (__rela_iplt_start, .)
- *(.rela.iplt)
-                0x10000ed4                PROVIDE (__rela_iplt_end, .)
-
-.rel.plt
+.rel.plt        0x0000000008048e3c      0x2b8
  *(.rel.plt)
+ .rel.plt       0x0000000008048e3c      0x2b8 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x00000000080490f4                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x00000000080490f4                PROVIDE (__rel_iplt_end, .)
 
-.rela.plt       0x10000ed4      0x3e4
- *(.rela.plt)
- .rela.plt      0x10000ed4      0x3e4 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+.init           0x00000000080490f4       0x23
+ *(SORT(.init))
+ .init          0x00000000080490f4       0x1e /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+                0x00000000080490f4                _init
+ .init          0x0000000008049112        0x5 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
 
-.init           0x100012b8       0x58
- *(.init)
- .init          0x100012b8       0x30 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
-                0x100012b8                _init
- .init          0x100012e8        0xc /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
- .init          0x100012f4        0xc /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
- .init          0x10001300       0x10 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
-
-.plt            0x10001310      0x544
+.plt            0x0000000008049120      0x580
  *(.plt)
- .plt           0x10001310      0x544 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x10001320                getpwnam@@GLIBC_2.0
-                0x10001330                IPC_set_owner
-                0x10001340                dup2@@GLIBC_2.0
-                0x10001350                PCD_api_find_process_id
-                0x10001360                strcmp@@GLIBC_2.0
-                0x10001370                read@@GLIBC_2.0
-                0x10001380                printf@@GLIBC_2.0
-                0x10001390                fflush@@GLIBC_2.0
-                0x100013a0                _exit@@GLIBC_2.0
-                0x100013b0                sigprocmask@@GLIBC_2.0
-                0x100013c0                free@@GLIBC_2.0
-                0x100013d0                memcpy@@GLIBC_2.0
-                0x100013e0                fgets@@GLIBC_2.0
-                0x100013f0                IPC_get_msg
-                0x10001400                fclose@@GLIBC_2.1
-                0x10001410                signal@@GLIBC_2.0
-                0x10001420                lseek@@GLIBC_2.0
-                0x10001430                gettimeofday@@GLIBC_2.0
-                0x10001440                select@@GLIBC_2.0
-                0x10001450                ctime@@GLIBC_2.0
-                0x10001460                IPC_stop
-                0x10001470                unlink@@GLIBC_2.0
-                0x10001480                execvp@@GLIBC_2.0
-                0x10001490                strsignal@@GLIBC_2.0
-                0x100014a0                ioctl@@GLIBC_2.0
-                0x100014b0                IPC_init
-                0x100014c0                __xstat@@GLIBC_2.0
-                0x100014d0                waitpid@@GLIBC_2.0
-                0x100014e0                usleep@@GLIBC_2.0
-                0x100014f0                strcpy@@GLIBC_2.0
-                0x10001500                getpid@@GLIBC_2.0
-                0x10001510                sched_getparam@@GLIBC_2.0
-                0x10001520                daemon@@GLIBC_2.0
-                0x10001530                getenv@@GLIBC_2.0
-                0x10001540                malloc@@GLIBC_2.0
-                0x10001550                setpriority@@GLIBC_2.0
-                0x10001560                puts@@GLIBC_2.0
-                0x10001570                strerror@@GLIBC_2.0
-                0x10001580                IPC_get_context_by_owner
-                0x100015a0                exit@@GLIBC_2.0
-                0x100015b0                kill@@GLIBC_2.0
-                0x100015c0                open@@GLIBC_2.0
-                0x100015d0                IPC_wait_msg
-                0x100015e0                getopt_long@@GLIBC_2.0
-                0x100015f0                IPC_get_msg_context
-                0x10001600                strtoul@@GLIBC_2.0
-                0x10001610                strchr@@GLIBC_2.0
-                0x10001620                setreuid@@GLIBC_2.0
-                0x10001630                strlen@@GLIBC_2.0
-                0x10001640                __libc_start_main@@GLIBC_2.0
-                0x10001650                fprintf@@GLIBC_2.0
-                0x10001660                write@@GLIBC_2.0
-                0x10001670                strcasecmp@@GLIBC_2.0
-                0x10001680                sigaddset@@GLIBC_2.0
-                0x10001690                fopen@@GLIBC_2.1
-                0x100016a0                memset@@GLIBC_2.0
-                0x100016b0                snprintf@@GLIBC_2.0
-                0x100016c0                IPC_cleanup_proc
-                0x100016d0                ftruncate@@GLIBC_2.0
-                0x100016e0                __errno_location@@GLIBC_2.0
-                0x100016f0                strncpy@@GLIBC_2.0
-                0x10001700                IPC_alloc_msg
-                0x10001710                strtok@@GLIBC_2.0
-                0x10001720                fork@@GLIBC_2.0
-                0x10001730                sigemptyset@@GLIBC_2.0
-                0x10001740                strpbrk@@GLIBC_2.0
-                0x10001750                IPC_reply_msg
-                0x10001760                sprintf@@GLIBC_2.0
-                0x10001770                IPC_free_msg
-                0x10001780                socket@@GLIBC_2.0
-                0x10001790                clock_gettime@@GLIBC_2.2
-                0x100017a0                sigaction@@GLIBC_2.0
-                0x100017b0                strncmp@@GLIBC_2.0
-                0x100017c0                abort@@GLIBC_2.0
-                0x100017d0                IPC_start
-                0x100017e0                strtol@@GLIBC_2.0
-                0x100017f0                fputs@@GLIBC_2.0
-                0x10001800                close@@GLIBC_2.0
-                0x10001810                mkfifo@@GLIBC_2.0
-                0x10001820                sched_setscheduler@@GLIBC_2.0
-                0x10001830                __ctype_b_loc@@GLIBC_2.3
-                0x10001840                strncat@@GLIBC_2.0
-
-.iplt
+ .plt           0x0000000008049120      0x580 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x0000000008049130                getpwnam@@GLIBC_2.0
+                0x0000000008049140                IPC_set_owner
+                0x0000000008049150                dup2@@GLIBC_2.0
+                0x0000000008049160                __snprintf_chk@@GLIBC_2.3.4
+                0x0000000008049170                PCD_api_find_process_id
+                0x0000000008049180                strcmp@@GLIBC_2.0
+                0x0000000008049190                read@@GLIBC_2.0
+                0x00000000080491a0                fflush@@GLIBC_2.0
+                0x00000000080491b0                _exit@@GLIBC_2.0
+                0x00000000080491c0                sigprocmask@@GLIBC_2.0
+                0x00000000080491d0                free@@GLIBC_2.0
+                0x00000000080491e0                memcpy@@GLIBC_2.0
+                0x00000000080491f0                fgets@@GLIBC_2.0
+                0x0000000008049200                IPC_get_msg
+                0x0000000008049210                fclose@@GLIBC_2.1
+                0x0000000008049220                signal@@GLIBC_2.0
+                0x0000000008049230                lseek@@GLIBC_2.0
+                0x0000000008049240                gettimeofday@@GLIBC_2.0
+                0x0000000008049250                select@@GLIBC_2.0
+                0x0000000008049260                ctime@@GLIBC_2.0
+                0x0000000008049270                IPC_stop
+                0x0000000008049280                __stack_chk_fail@@GLIBC_2.4
+                0x0000000008049290                __fdelt_chk@@GLIBC_2.15
+                0x00000000080492a0                unlink@@GLIBC_2.0
+                0x00000000080492b0                execvp@@GLIBC_2.0
+                0x00000000080492c0                strsignal@@GLIBC_2.0
+                0x00000000080492d0                ioctl@@GLIBC_2.0
+                0x00000000080492e0                IPC_init
+                0x00000000080492f0                __xstat@@GLIBC_2.0
+                0x0000000008049300                waitpid@@GLIBC_2.0
+                0x0000000008049310                usleep@@GLIBC_2.0
+                0x0000000008049320                strcpy@@GLIBC_2.0
+                0x0000000008049330                getpid@@GLIBC_2.0
+                0x0000000008049340                sched_getparam@@GLIBC_2.0
+                0x0000000008049350                daemon@@GLIBC_2.0
+                0x0000000008049360                getenv@@GLIBC_2.0
+                0x0000000008049370                malloc@@GLIBC_2.0
+                0x0000000008049380                setpriority@@GLIBC_2.0
+                0x0000000008049390                puts@@GLIBC_2.0
+                0x00000000080493a0                strerror@@GLIBC_2.0
+                0x00000000080493b0                __memcpy_chk@@GLIBC_2.3.4
+                0x00000000080493c0                IPC_get_context_by_owner
+                0x00000000080493e0                exit@@GLIBC_2.0
+                0x00000000080493f0                kill@@GLIBC_2.0
+                0x0000000008049400                open@@GLIBC_2.0
+                0x0000000008049410                IPC_wait_msg
+                0x0000000008049420                getopt_long@@GLIBC_2.0
+                0x0000000008049430                IPC_get_msg_context
+                0x0000000008049440                strtoul@@GLIBC_2.0
+                0x0000000008049450                strchr@@GLIBC_2.0
+                0x0000000008049460                setreuid@@GLIBC_2.0
+                0x0000000008049470                strlen@@GLIBC_2.0
+                0x0000000008049480                __libc_start_main@@GLIBC_2.0
+                0x0000000008049490                write@@GLIBC_2.0
+                0x00000000080494a0                strcasecmp@@GLIBC_2.0
+                0x00000000080494b0                sigaddset@@GLIBC_2.0
+                0x00000000080494c0                fopen@@GLIBC_2.1
+                0x00000000080494d0                IPC_cleanup_proc
+                0x00000000080494e0                ftruncate@@GLIBC_2.0
+                0x00000000080494f0                __errno_location@@GLIBC_2.0
+                0x0000000008049500                strncpy@@GLIBC_2.0
+                0x0000000008049510                __strncpy_chk@@GLIBC_2.3.4
+                0x0000000008049520                __strcpy_chk@@GLIBC_2.3.4
+                0x0000000008049530                IPC_alloc_msg
+                0x0000000008049540                __printf_chk@@GLIBC_2.3.4
+                0x0000000008049550                strtok@@GLIBC_2.0
+                0x0000000008049560                fork@@GLIBC_2.0
+                0x0000000008049570                sigemptyset@@GLIBC_2.0
+                0x0000000008049580                strpbrk@@GLIBC_2.0
+                0x0000000008049590                IPC_reply_msg
+                0x00000000080495a0                IPC_free_msg
+                0x00000000080495b0                socket@@GLIBC_2.0
+                0x00000000080495c0                __fprintf_chk@@GLIBC_2.3.4
+                0x00000000080495d0                clock_gettime@@GLIBC_2.2
+                0x00000000080495e0                sigaction@@GLIBC_2.0
+                0x00000000080495f0                strncmp@@GLIBC_2.0
+                0x0000000008049600                abort@@GLIBC_2.0
+                0x0000000008049610                IPC_start
+                0x0000000008049620                strtol@@GLIBC_2.0
+                0x0000000008049630                fputs@@GLIBC_2.0
+                0x0000000008049640                close@@GLIBC_2.0
+                0x0000000008049650                mkfifo@@GLIBC_2.0
+                0x0000000008049660                sched_setscheduler@@GLIBC_2.0
+                0x0000000008049670                __ctype_b_loc@@GLIBC_2.3
+                0x0000000008049680                __sprintf_chk@@GLIBC_2.3.4
+                0x0000000008049690                strncat@@GLIBC_2.0
  *(.iplt)
+ .iplt          0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.text           0x10001854     0x6fd0
- *(.text.unlikely .text.*_unlikely)
+.text           0x00000000080496a0     0x6612
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  *(.text.exit .text.exit.*)
  *(.text.startup .text.startup.*)
- .text.startup  0x10001854      0x154 main.o
-                0x10001854                main
+ .text.startup  0x00000000080496a0      0x187 main.o
+                0x00000000080496a0                main
  *(.text.hot .text.hot.*)
  *(.text .stub .text.* .gnu.linkonce.t.*)
- .text          0x100019a8       0x4c /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x100019a8                _start
- .text          0x100019f4        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
- .text          0x100019f4       0xd4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
- .text          0x10001ac8      0x580 condchk.o
-                0x10001ac8                PCD_start_cond_check_NONE
-                0x10001ad0                PCD_end_cond_check_NONE
-                0x10001ad8                PCD_end_cond_check_EXIT
-                0x10001b10                PCD_end_cond_check_PROCESS_READY
-                0x10001b30                PCD_end_cond_check_IPC_OWNER
-                0x10001b54                PCD_start_cond_check_IPC_OWNER
-                0x10001b78                PCD_end_cond_check_NETDEVICE
-                0x10001c94                PCD_start_cond_check_NETDEVICE
-                0x10001db0                PCD_start_cond_check_FILE
-                0x10001de4                PCD_end_cond_check_FILE
-                0x10001e18                PCD_start_cond_check_ENV_VAR
-                0x10001e68                PCD_start_cond_check_RULE_COMPLETED
-                0x10001fdc                PCD_end_cond_check_WAIT
-                0x10002010                PCD_start_cond_check_get_function
-                0x10002028                PCD_end_cond_check_get_function
-                0x10002040                PCD_start_cond_check_PNAME
- .text          0x10002048      0x41c errlog.o
-                0x100022ac                PCD_errlog_init
-                0x10002310                PCD_errlog_close
-                0x10002370                PCD_errlog_log
- .text          0x10002464      0x74c except.o
-                0x10002890                PCD_exception_init
-                0x10002a0c                PCD_exception_close
-                0x10002a5c                PCD_exception_listen
- .text          0x10002bb0      0x214 failact.o
-                0x10002bb0                PCD_failure_action_NONE
-                0x10002c40                PCD_failure_action_RESTART
-                0x10002c80                PCD_failure_action_EXEC_RULE
-                0x10002d6c                PCD_failure_action_REBOOT
-                0x10002dac                PCD_failure_action_get_function
- .text          0x10002dc4      0x67c main.o
-                0x10002dc4                PCD_main_parse_params
-                0x1000321c                PCD_main_set_self_priority
-                0x10003278                PCD_main_init
-                0x10003358                PCD_main_loop
- .text          0x10003440      0x18c misc.o
-                0x10003440                PCD_misc_reduce_net_rx_priority
-                0x10003540                PCD_misc_restore_net_rx_priority
- .text          0x100035cc     0x1e74 parser.o
-                0x10005230                PCD_parser_parse
-                0x10005414                PCD_parser_enable_verbose
- .text          0x10005440      0x90c pcd_api.o
-                0x10005554                PCD_api_init
-                0x10005660                PCD_api_deinit
-                0x1000568c                PCD_api_check_messages
-                0x10005b90                PCD_api_reply_message
- .text          0x10005d4c     0x19b4 process.o
-                0x1000676c                PCD_process_enqueue
-                0x10006920                PCD_process_stop
-                0x10006a6c                PCD_process_init
-                0x10006c78                PCD_process_iterate_start
-                0x10006d40                PCD_process_iterate_stop
-                0x10007234                PCD_process_signal_by_rule
-                0x100072fc                PCD_process_get_rule_by_pid
-                0x10007338                PCD_process_reboot
- .text          0x10007700      0x6d0 rules_db.o
-                0x10007700                PCD_rulesdb_add_rule
-                0x100079c8                PCD_rulesdb_get_rule_by_id
-                0x10007b08                PCD_rulesdb_get_rule_by_pid
-                0x10007b68                PCD_rulesdb_get_first
-                0x10007b90                PCD_rulesdb_get_next
-                0x10007be8                PCD_rulesdb_activate
-                0x10007cec                PCD_rulesdb_setup_optional_params
-                0x10007d88                PCD_rulesdb_clear_optional_params
- .text          0x10007dd0      0x944 timer.o
-                0x1000809c                PCD_timer_init
-                0x100080a4                PCD_timer_iterate
-                0x10008530                PCD_timer_start
-                0x10008544                PCD_timer_stop
-                0x10008554                PCD_timer_enqueue_rule
-                0x100085f8                PCD_timer_dequeue_rule
- .text          0x10008714       0xd4 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a(elf-init.oS)
-                0x10008714                __libc_csu_init
-                0x100087d4                __libc_csu_fini
- .text          0x100087e8       0x3c /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
- .text          0x10008824        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+ .text          0x0000000008049827       0x22 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x0000000008049827                _start
+ .text          0x0000000008049849        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+ *fill*         0x0000000008049849        0x7 
+ .gnu.linkonce.t.__x86.get_pc_thunk.bx
+                0x0000000008049850        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+                0x0000000008049850                __x86.get_pc_thunk.bx
+ *fill*         0x0000000008049854        0xc 
+ .text          0x0000000008049860       0xbd /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ *fill*         0x000000000804991d        0x3 
+ .text          0x0000000008049920      0x483 condchk.o
+                0x0000000008049920                PCD_start_cond_check_NONE
+                0x0000000008049930                PCD_end_cond_check_NONE
+                0x0000000008049940                PCD_end_cond_check_EXIT
+                0x0000000008049970                PCD_end_cond_check_PROCESS_READY
+                0x00000000080499a0                PCD_end_cond_check_WAIT
+                0x00000000080499e0                PCD_start_cond_check_FILE
+                0x0000000008049a20                PCD_end_cond_check_FILE
+                0x0000000008049a60                PCD_start_cond_check_RULE_COMPLETED
+                0x0000000008049b90                PCD_start_cond_check_IPC_OWNER
+                0x0000000008049bb0                PCD_end_cond_check_IPC_OWNER
+                0x0000000008049be0                PCD_start_cond_check_ENV_VAR
+                0x0000000008049c20                PCD_start_cond_check_NETDEVICE
+                0x0000000008049cd0                PCD_end_cond_check_NETDEVICE
+                0x0000000008049d80                PCD_start_cond_check_get_function
+                0x0000000008049d90                PCD_end_cond_check_get_function
+                0x0000000008049da0                PCD_start_cond_check_PNAME
+ *fill*         0x0000000008049da3        0xd 
+ .text          0x0000000008049db0      0x332 errlog.o
+                0x0000000008049f80                PCD_errlog_init
+                0x0000000008049fe0                PCD_errlog_close
+                0x000000000804a020                PCD_errlog_log
+ *fill*         0x000000000804a0e2        0xe 
+ .text          0x000000000804a0f0      0x71c except.o
+                0x000000000804a540                PCD_exception_init
+                0x000000000804a6b0                PCD_exception_close
+                0x000000000804a6f0                PCD_exception_listen
+ *fill*         0x000000000804a80c        0x4 
+ .text          0x000000000804a810      0x26c failact.o
+                0x000000000804a810                PCD_failure_action_NONE
+                0x000000000804a8d0                PCD_failure_action_REBOOT
+                0x000000000804a900                PCD_failure_action_RESTART
+                0x000000000804a940                PCD_failure_action_EXEC_RULE
+                0x000000000804aa70                PCD_failure_action_get_function
+ *fill*         0x000000000804aa7c        0x4 
+ .text          0x000000000804aa80      0x549 main.o
+                0x000000000804aa80                PCD_main_parse_params
+                0x000000000804ae60                PCD_main_set_self_priority
+                0x000000000804aeb0                PCD_main_init
+                0x000000000804af60                PCD_main_loop
+ *fill*         0x000000000804afc9        0x7 
+ .text          0x000000000804afd0      0x164 misc.o
+                0x000000000804afd0                PCD_misc_reduce_net_rx_priority
+                0x000000000804b0b0                PCD_misc_restore_net_rx_priority
+ *fill*         0x000000000804b134        0xc 
+ .text          0x000000000804b140     0x1bc2 parser.o
+                0x000000000804cb20                PCD_parser_parse
+                0x000000000804ccf0                PCD_parser_enable_verbose
+ *fill*         0x000000000804cd02        0xe 
+ .text          0x000000000804cd10      0x8ab pcd_api.o
+                0x000000000804cd70                PCD_api_init
+                0x000000000804ced0                PCD_api_deinit
+                0x000000000804cef0                PCD_api_check_messages
+                0x000000000804d3f0                PCD_api_reply_message
+ *fill*         0x000000000804d5bb        0x5 
+ .text          0x000000000804d5c0     0x1693 process.o
+                0x000000000804ddf0                PCD_process_enqueue
+                0x000000000804df90                PCD_process_stop
+                0x000000000804e0d0                PCD_process_init
+                0x000000000804e290                PCD_process_iterate_start
+                0x000000000804e340                PCD_process_iterate_stop
+                0x000000000804e8b0                PCD_process_signal_by_rule
+                0x000000000804e970                PCD_process_get_rule_by_pid
+                0x000000000804e9a0                PCD_process_reboot
+ *fill*         0x000000000804ec53        0xd 
+ .text          0x000000000804ec60      0x69a rules_db.o
+                0x000000000804ec60                PCD_rulesdb_add_rule
+                0x000000000804ef50                PCD_rulesdb_get_rule_by_id
+                0x000000000804f0a0                PCD_rulesdb_get_rule_by_pid
+                0x000000000804f0e0                PCD_rulesdb_get_first
+                0x000000000804f100                PCD_rulesdb_get_next
+                0x000000000804f150                PCD_rulesdb_activate
+                0x000000000804f260                PCD_rulesdb_setup_optional_params
+                0x000000000804f2c0                PCD_rulesdb_clear_optional_params
+ *fill*         0x000000000804f2fa        0x6 
+ .text          0x000000000804f300      0x939 timer.o
+                0x000000000804f610                PCD_timer_init
+                0x000000000804f620                PCD_timer_iterate
+                0x000000000804faf0                PCD_timer_start
+                0x000000000804fb00                PCD_timer_stop
+                0x000000000804fb10                PCD_timer_enqueue_rule
+                0x000000000804fb90                PCD_timer_dequeue_rule
+ *fill*         0x000000000804fc39        0x7 
+ .text          0x000000000804fc40       0x72 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x000000000804fc40                __libc_csu_init
+                0x000000000804fcb0                __libc_csu_fini
+ .text          0x000000000804fcb2        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+ .text          0x000000000804fcb2        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
  *(.gnu.warning)
 
-.fini           0x10008824       0x34
- *(.fini)
- .fini          0x10008824       0x18 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
-                0x10008824                _fini
- .fini          0x1000883c        0xc /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
- .fini          0x10008848       0x10 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
-                0x10008858                PROVIDE (__etext, .)
-                0x10008858                PROVIDE (_etext, .)
-                0x10008858                PROVIDE (etext, .)
+.fini           0x000000000804fcb4       0x14
+ *(SORT(.fini))
+ .fini          0x000000000804fcb4        0xf /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+                0x000000000804fcb4                _fini
+ .fini          0x000000000804fcc3        0x5 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+                0x000000000804fcc8                PROVIDE (__etext, .)
+                0x000000000804fcc8                PROVIDE (_etext, .)
+                0x000000000804fcc8                PROVIDE (etext, .)
 
-.rodata         0x10008858     0x19d2
+.rodata         0x000000000804fce0     0x184c
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x10008858        0x4 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x10008858                _IO_stdin_used
- .rodata        0x1000885c       0x74 condchk.o
- .rodata        0x100088d0      0x48f except.o
- *fill*         0x10008d5f        0x1 00
- .rodata        0x10008d60       0xb0 failact.o
- .rodata        0x10008e10      0x54f main.o
- *fill*         0x1000935f        0x1 00
- .rodata        0x10009360       0x7f misc.o
- *fill*         0x100093df        0x1 00
- .rodata        0x100093e0      0x670 parser.o
- .rodata        0x10009a50      0x247 pcd_api.o
- *fill*         0x10009c97        0x1 00
- .rodata        0x10009c98      0x43b process.o
- *fill*         0x1000a0d3        0x1 00
- .rodata        0x1000a0d4       0x8b rules_db.o
- *fill*         0x1000a15f        0x1 00
- .rodata        0x1000a160       0xca timer.o
+ .rodata        0x000000000804fce0        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x000000000804fce0                _fp_hw
+ .rodata.cst4   0x000000000804fce4        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x000000000804fce4                _IO_stdin_used
+ .rodata.str1.1
+                0x000000000804fce8        0xe condchk.o
+                                         0x11 (size before relaxing)
+ *fill*         0x000000000804fcf6        0x2 
+ .rodata.str1.4
+                0x000000000804fcf8       0x24 condchk.o
+ *fill*         0x000000000804fd1c        0x4 
+ .rodata        0x000000000804fd20       0x3c condchk.o
+ .rodata.str1.1
+                0x000000000804fd5c      0x215 except.o
+                                        0x226 (size before relaxing)
+ *fill*         0x000000000804ff71        0x3 
+ .rodata.str1.4
+                0x000000000804ff74      0x1f3 except.o
+ *fill*         0x0000000008050167        0x1 
+ .rodata        0x0000000008050168       0x48 except.o
+ .rodata.str1.1
+                0x00000000080501b0       0x18 failact.o
+                                         0x29 (size before relaxing)
+ .rodata.str1.4
+                0x00000000080501c8       0x6e failact.o
+ *fill*         0x0000000008050236        0x2 
+ .rodata        0x0000000008050238       0x14 failact.o
+ .rodata.str1.1
+                0x000000000805024c       0x92 main.o
+                                         0xa3 (size before relaxing)
+ *fill*         0x00000000080502de        0x2 
+ .rodata.str1.4
+                0x00000000080502e0      0x3f3 main.o
+ *fill*         0x00000000080506d3        0xd 
+ .rodata        0x00000000080506e0       0xa0 main.o
+ .rodata.str1.1
+                0x0000000008050780       0x10 misc.o
+                                         0x19 (size before relaxing)
+ .rodata.str1.4
+                0x0000000008050790       0x63 misc.o
+ .rodata.str1.1
+                0x00000000080507f3      0x218 parser.o
+                                        0x230 (size before relaxing)
+ *fill*         0x0000000008050a0b        0x1 
+ .rodata.str1.4
+                0x0000000008050a0c      0x384 parser.o
+ *fill*         0x0000000008050d90       0x10 
+ .rodata        0x0000000008050da0       0x7c parser.o
+ .rodata.str1.1
+                0x0000000008050e1c       0x60 pcd_api.o
+                                         0x7b (size before relaxing)
+ .rodata.str1.4
+                0x0000000008050e7c      0x187 pcd_api.o
+ *fill*         0x0000000008051003        0x1 
+ .rodata        0x0000000008051004       0x38 pcd_api.o
+ .rodata.str1.1
+                0x000000000805103c       0x44 process.o
+                                         0x5f (size before relaxing)
+ .rodata.str1.4
+                0x0000000008051080      0x387 process.o
+ *fill*         0x0000000008051407        0x1 
+ .rodata        0x0000000008051408       0x20 process.o
+ .rodata.str1.1
+                0x0000000000000000       0x11 rules_db.o
+ .rodata.str1.4
+                0x0000000008051428       0x53 rules_db.o
+                                         0x77 (size before relaxing)
+ .rodata.str1.1
+                0x000000000805147b       0x32 timer.o
+                                         0x48 (size before relaxing)
+ *fill*         0x00000000080514ad        0x3 
+ .rodata.str1.4
+                0x00000000080514b0       0x7c timer.o
+                                         0x7a (size before relaxing)
 
 .rodata1
  *(.rodata1)
 
-.eh_frame_hdr   0x1000a22c        0x0
+.eh_frame_hdr   0x000000000805152c      0x2ec
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x00000000        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+ .eh_frame_hdr  0x000000000805152c      0x2ec condchk.o
 
-.eh_frame       0x1000a22c        0x4
+.eh_frame       0x0000000008051818      0xf20
  *(.eh_frame)
- .eh_frame      0x1000a22c        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
+ .eh_frame      0x0000000008051818       0x3c /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x0000000008051854      0x1bc condchk.o
+                                        0x1d4 (size before relaxing)
+ .eh_frame      0x0000000008051a10       0xac errlog.o
+                                         0xc4 (size before relaxing)
+ .eh_frame      0x0000000008051abc       0xbc except.o
+                                         0xd4 (size before relaxing)
+ .eh_frame      0x0000000008051b78       0xa8 failact.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000008051c20       0xbc main.o
+                                         0xd4 (size before relaxing)
+ .eh_frame      0x0000000008051cdc       0x4c misc.o
+                                         0x64 (size before relaxing)
+ .eh_frame      0x0000000008051d28      0x388 parser.o
+                                        0x3a0 (size before relaxing)
+ .eh_frame      0x00000000080520b0      0x100 pcd_api.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x00000000080521b0      0x248 process.o
+                                        0x260 (size before relaxing)
+ .eh_frame      0x00000000080523f8      0x150 rules_db.o
+                                        0x168 (size before relaxing)
+ .eh_frame      0x0000000008052548      0x19c timer.o
+                                        0x1b4 (size before relaxing)
+ .eh_frame      0x00000000080526e4       0x50 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x7c (size before relaxing)
+ .eh_frame      0x0000000008052734        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
 
 .exception_ranges
  *(.exception_ranges .exception_ranges*)
-                0x1000a230                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
-                0x1000b230                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+                0x0000000008052738                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000008053ef0                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
 
 .eh_frame
  *(.eh_frame)
@@ -390,136 +524,148 @@ LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x1000b230        0x0
-                0x1000b230                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0000000008053ef0        0x0
+                0x0000000008053ef0                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x1000b230                PROVIDE (__preinit_array_end, .)
+                0x0000000008053ef0                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x1000b230        0x0
-                0x1000b230                PROVIDE (__init_array_start, .)
- *(SORT(.init_array.*))
- *(.init_array)
-                0x1000b230                PROVIDE (__init_array_end, .)
+.init_array     0x0000000008053ef0        0x4
+                0x0000000008053ef0                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000008053ef0        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+                0x0000000008053ef4                PROVIDE (__init_array_end, .)
 
-.fini_array     0x1000b230        0x0
-                0x1000b230                PROVIDE (__fini_array_start, .)
- *(SORT(.fini_array.*))
- *(.fini_array)
-                0x1000b230                PROVIDE (__fini_array_end, .)
+.fini_array     0x0000000008053ef4        0x4
+                0x0000000008053ef4                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000008053ef4        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+                0x0000000008053ef8                PROVIDE (__fini_array_end, .)
 
-.ctors          0x1000b230        0x8
+.ctors
  *crtbegin.o(.ctors)
- .ctors         0x1000b230        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
- .ctors         0x1000b234        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
 
-.dtors          0x1000b238        0x8
+.dtors
  *crtbegin.o(.dtors)
- .dtors         0x1000b238        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
- .dtors         0x1000b23c        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
-                0x1000b23c                __DTOR_END__
 
-.jcr            0x1000b240        0x4
+.jcr            0x0000000008053ef8        0x4
  *(.jcr)
- .jcr           0x1000b240        0x0 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
- .jcr           0x1000b240        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
+ .jcr           0x0000000008053ef8        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ .jcr           0x0000000008053ef8        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
 
 .data.rel.ro
  *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
- *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
 
-.dynamic        0x1000b244       0xe8
+.dynamic        0x0000000008053efc      0x100
  *(.dynamic)
- .dynamic       0x1000b244       0xe8 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x1000b244                _DYNAMIC
+ .dynamic       0x0000000008053efc      0x100 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x0000000008053efc                _DYNAMIC
 
-.got            0x1000b32c        0xc
+.got            0x0000000008053ffc        0x4
  *(.got)
- .got           0x1000b32c        0xc /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
+ .got           0x0000000008053ffc        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
  *(.igot)
-                0x1000b338                . = DATA_SEGMENT_RELRO_END (., 0xc)
+                0x0000000008054ff4                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0xc)?0xc:0x0)
 
-.got.plt        0x1000b338      0x158
+.got.plt        0x0000000008054000      0x168
  *(.got.plt)
- .got.plt       0x1000b338      0x158 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x1000b338                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x0000000008054000      0x168 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x0000000008054000                _GLOBAL_OFFSET_TABLE_
  *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
 
-.data           0x1000b490      0x12c
+.data           0x0000000008054180      0x15c
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x1000b490        0x4 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x1000b490                data_start
-                0x1000b490                __data_start
- .data          0x1000b494        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
- .data          0x1000b494        0x8 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
-                0x1000b498                __dso_handle
- .data          0x1000b49c        0x0 condchk.o
- .data          0x1000b49c        0x4 errlog.o
- .data          0x1000b4a0        0x4 except.o
- .data          0x1000b4a4        0x0 failact.o
- .data          0x1000b4a4        0x4 main.o
-                0x1000b4a4                PCD_TIMER_TICK
- .data          0x1000b4a8        0x0 misc.o
- .data          0x1000b4a8       0xd4 parser.o
-                0x1000b4a8                keywordHandlersList
- .data          0x1000b57c        0x0 pcd_api.o
- .data          0x1000b57c        0x0 process.o
- .data          0x1000b57c        0x0 rules_db.o
- .data          0x1000b57c       0x3c timer.o
-                0x1000b57c                endCondFuncs
-                0x1000b59c                startCondFuncs
- .data          0x1000b5b8        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a(elf-init.oS)
- .data          0x1000b5b8        0x4 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
- .data          0x1000b5bc        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+ .data          0x0000000008054180        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x0000000008054180                data_start
+                0x0000000008054180                __data_start
+ .data          0x0000000008054184        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+ .data          0x0000000008054184        0x4 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+                0x0000000008054184                __dso_handle
+ .data          0x0000000008054188        0x0 condchk.o
+ .data          0x0000000008054188        0x4 errlog.o
+ .data          0x000000000805418c        0x4 except.o
+ .data          0x0000000008054190        0x0 failact.o
+ .data          0x0000000008054190        0x4 main.o
+                0x0000000008054190                PCD_TIMER_TICK
+ .data          0x0000000008054194        0x0 misc.o
+ *fill*         0x0000000008054194        0xc 
+ .data          0x00000000080541a0       0xf0 parser.o
+                0x00000000080541c0                keywordHandlersList
+ .data          0x0000000008054290        0x0 pcd_api.o
+ .data          0x0000000008054290        0x0 process.o
+ .data          0x0000000008054290        0x0 rules_db.o
+ *fill*         0x0000000008054290       0x10 
+ .data          0x00000000080542a0       0x3c timer.o
+                0x00000000080542a0                endCondFuncs
+                0x00000000080542c0                startCondFuncs
+ .data          0x00000000080542dc        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x00000000080542dc        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+ .data          0x00000000080542dc        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+
+.tm_clone_table
+                0x00000000080542dc        0x0
+ .tm_clone_table
+                0x00000000080542dc        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ .tm_clone_table
+                0x00000000080542dc        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
 
 .data1
  *(.data1)
-                0x1000b5bc                _edata = .
-                0x1000b5bc                PROVIDE (edata, .)
-                0x1000b5bc                __bss_start = .
+                0x00000000080542dc                _edata = .
+                0x00000000080542dc                PROVIDE (edata, .)
+                0x00000000080542dc                . = .
+                0x00000000080542dc                __bss_start = .
 
-.bss            0x1000b5bc      0x2a8
+.bss            0x00000000080542e0      0x2e0
  *(.dynbss)
- .dynbss        0x1000b5bc       0x10 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
-                0x1000b5bc                stderr@@GLIBC_2.0
-                0x1000b5c0                stdout@@GLIBC_2.0
-                0x1000b5c4                opterr@@GLIBC_2.0
-                0x1000b5c8                optarg@@GLIBC_2.0
+ .dynbss        0x00000000080542e0       0x2c /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+                0x00000000080542e0                stderr@@GLIBC_2.0
+                0x0000000008054300                stdout@@GLIBC_2.0
+                0x0000000008054304                opterr@@GLIBC_2.0
+                0x0000000008054308                optarg@@GLIBC_2.0
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x1000b5cc        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crt1.o
- .bss           0x1000b5cc        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crti.o
- .bss           0x1000b5cc        0x8 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtbegin.o
- .bss           0x1000b5d4        0x0 condchk.o
- .bss           0x1000b5d4        0x4 errlog.o
- .bss           0x1000b5d8       0x80 except.o
- .bss           0x1000b658        0x0 failact.o
- .bss           0x1000b658       0x10 main.o
-                0x1000b658                debugMode
-                0x1000b65c                verboseOutput
- .bss           0x1000b668        0x8 misc.o
- .bss           0x1000b670      0x1d0 parser.o
- .bss           0x1000b840        0x4 pcd_api.o
- .bss           0x1000b844        0x4 process.o
-                0x1000b844                procList
- .bss           0x1000b848        0xc rules_db.o
- .bss           0x1000b854       0x10 timer.o
- .bss           0x1000b864        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/libc_nonshared.a(elf-init.oS)
- .bss           0x1000b864        0x0 /usr/local/lib/mbgcc/bin/../lib/gcc/microblazeel-xilinx-linux-gnu/4.6.2/crtend.o
- .bss           0x1000b864        0x0 /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/crtn.o
+ .bss           0x000000000805430c        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o
+ .bss           0x000000000805430c        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o
+ .bss           0x000000000805430c        0x1 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ .bss           0x000000000805430d        0x0 condchk.o
+ *fill*         0x000000000805430d        0x3 
+ .bss           0x0000000008054310        0x4 errlog.o
+ *fill*         0x0000000008054314        0xc 
+ .bss           0x0000000008054320       0x80 except.o
+ .bss           0x00000000080543a0        0x0 failact.o
+ .bss           0x00000000080543a0       0x10 main.o
+                0x00000000080543a0                debugMode
+                0x00000000080543a4                verboseOutput
+ .bss           0x00000000080543b0        0x8 misc.o
+ *fill*         0x00000000080543b8        0x8 
+ .bss           0x00000000080543c0      0x1dc parser.o
+ .bss           0x000000000805459c        0x4 pcd_api.o
+ .bss           0x00000000080545a0        0x4 process.o
+                0x00000000080545a0                procList
+ .bss           0x00000000080545a4        0xc rules_db.o
+ .bss           0x00000000080545b0       0x10 timer.o
+ .bss           0x00000000080545c0        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x00000000080545c0        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+ .bss           0x00000000080545c0        0x0 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
  *(COMMON)
-                0x1000b864                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x1000b864                . = ALIGN (0x4)
-                0x1000b864                . = ALIGN (0x4)
-                0x1000b864                _end = .
-                0x1000b864                PROVIDE (end, .)
-                0x1000b864                . = DATA_SEGMENT_END (.)
+                0x00000000080545c0                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00000000080545c0                . = ALIGN (0x4)
+                0x00000000080545c0                . = SEGMENT_START ("ldata-segment", .)
+                0x00000000080545c0                . = ALIGN (0x4)
+                0x00000000080545c0                _end = .
+                0x00000000080545c0                PROVIDE (end, .)
+                0x00000000080545c0                . = DATA_SEGMENT_END (.)
 
 .stab
  *(.stab)
@@ -539,8 +685,23 @@ LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment
+.comment        0x0000000000000000       0x24
  *(.comment)
+ .comment       0x0000000000000000       0x24 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+                                         0x25 (size before relaxing)
+ .comment       0x0000000000000000       0x25 condchk.o
+ .comment       0x0000000000000000       0x25 errlog.o
+ .comment       0x0000000000000000       0x25 except.o
+ .comment       0x0000000000000000       0x25 failact.o
+ .comment       0x0000000000000000       0x25 main.o
+ .comment       0x0000000000000000       0x25 misc.o
+ .comment       0x0000000000000000       0x25 parser.o
+ .comment       0x0000000000000000       0x25 pcd_api.o
+ .comment       0x0000000000000000       0x25 process.o
+ .comment       0x0000000000000000       0x25 rules_db.o
+ .comment       0x0000000000000000       0x25 timer.o
+ .comment       0x0000000000000000       0x25 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000000       0x25 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
 
 .debug
  *(.debug)
@@ -554,128 +715,117 @@ LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x168
+.debug_aranges  0x0000000000000000      0x168
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 condchk.o
+                0x0000000000000000       0x20 condchk.o
  .debug_aranges
-                0x00000020       0x20 errlog.o
+                0x0000000000000020       0x20 errlog.o
  .debug_aranges
-                0x00000040       0x20 except.o
+                0x0000000000000040       0x20 except.o
  .debug_aranges
-                0x00000060       0x20 failact.o
+                0x0000000000000060       0x20 failact.o
  .debug_aranges
-                0x00000080       0x28 main.o
+                0x0000000000000080       0x28 main.o
  .debug_aranges
-                0x000000a8       0x20 misc.o
+                0x00000000000000a8       0x20 misc.o
  .debug_aranges
-                0x000000c8       0x20 parser.o
+                0x00000000000000c8       0x20 parser.o
  .debug_aranges
-                0x000000e8       0x20 pcd_api.o
+                0x00000000000000e8       0x20 pcd_api.o
  .debug_aranges
-                0x00000108       0x20 process.o
+                0x0000000000000108       0x20 process.o
  .debug_aranges
-                0x00000128       0x20 rules_db.o
+                0x0000000000000128       0x20 rules_db.o
  .debug_aranges
-                0x00000148       0x20 timer.o
+                0x0000000000000148       0x20 timer.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x97d7
+.debug_info     0x0000000000000000    0x10688
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x11d2 condchk.o
- .debug_info    0x000011d2      0x556 errlog.o
- .debug_info    0x00001728      0xa6e except.o
- .debug_info    0x00002196      0xaaf failact.o
- .debug_info    0x00002c45      0x6cf main.o
- .debug_info    0x00003314      0x454 misc.o
- .debug_info    0x00003768     0x1c15 parser.o
- .debug_info    0x0000537d      0xe9b pcd_api.o
- .debug_info    0x00006218     0x16b9 process.o
- .debug_info    0x000078d1      0xde3 rules_db.o
- .debug_info    0x000086b4     0x1123 timer.o
+ .debug_info    0x0000000000000000     0x155c condchk.o
+ .debug_info    0x000000000000155c      0x8e9 errlog.o
+ .debug_info    0x0000000000001e45     0x12cb except.o
+ .debug_info    0x0000000000003110      0xda4 failact.o
+ .debug_info    0x0000000000003eb4      0xff8 main.o
+ .debug_info    0x0000000000004eac      0x60b misc.o
+ .debug_info    0x00000000000054b7     0x3cc9 parser.o
+ .debug_info    0x0000000000009180     0x18b0 pcd_api.o
+ .debug_info    0x000000000000aa30     0x3025 process.o
+ .debug_info    0x000000000000da55     0x13d2 rules_db.o
+ .debug_info    0x000000000000ee27     0x1861 timer.o
 
-.debug_abbrev   0x00000000     0x1c2e
+.debug_abbrev   0x0000000000000000     0x2790
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x2e7 condchk.o
- .debug_abbrev  0x000002e7      0x1bd errlog.o
- .debug_abbrev  0x000004a4      0x2ae except.o
- .debug_abbrev  0x00000752      0x1b5 failact.o
- .debug_abbrev  0x00000907      0x212 main.o
- .debug_abbrev  0x00000b19      0x10b misc.o
- .debug_abbrev  0x00000c24      0x3b2 parser.o
- .debug_abbrev  0x00000fd6      0x2ac pcd_api.o
- .debug_abbrev  0x00001282      0x3cf process.o
- .debug_abbrev  0x00001651      0x2b7 rules_db.o
- .debug_abbrev  0x00001908      0x326 timer.o
+ .debug_abbrev  0x0000000000000000      0x37d condchk.o
+ .debug_abbrev  0x000000000000037d      0x2a4 errlog.o
+ .debug_abbrev  0x0000000000000621      0x3a2 except.o
+ .debug_abbrev  0x00000000000009c3      0x324 failact.o
+ .debug_abbrev  0x0000000000000ce7      0x353 main.o
+ .debug_abbrev  0x000000000000103a      0x1ac misc.o
+ .debug_abbrev  0x00000000000011e6      0x4c1 parser.o
+ .debug_abbrev  0x00000000000016a7      0x380 pcd_api.o
+ .debug_abbrev  0x0000000000001a27      0x535 process.o
+ .debug_abbrev  0x0000000000001f5c      0x3fe rules_db.o
+ .debug_abbrev  0x000000000000235a      0x436 timer.o
 
-.debug_line     0x00000000     0x57d2
- *(.debug_line)
- .debug_line    0x00000000      0x709 condchk.o
- .debug_line    0x00000709      0x447 errlog.o
- .debug_line    0x00000b50      0x6ca except.o
- .debug_line    0x0000121a      0x38a failact.o
- .debug_line    0x000015a4      0x63a main.o
- .debug_line    0x00001bde      0x309 misc.o
- .debug_line    0x00001ee7     0x1114 parser.o
- .debug_line    0x00002ffb      0x74a pcd_api.o
- .debug_line    0x00003745     0x100d process.o
- .debug_line    0x00004752      0x750 rules_db.o
- .debug_line    0x00004ea2      0x930 timer.o
+.debug_line     0x0000000000000000     0x3224
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x427 condchk.o
+ .debug_line    0x0000000000000427      0x279 errlog.o
+ .debug_line    0x00000000000006a0      0x3db except.o
+ .debug_line    0x0000000000000a7b      0x299 failact.o
+ .debug_line    0x0000000000000d14      0x3d6 main.o
+ .debug_line    0x00000000000010ea      0x22a misc.o
+ .debug_line    0x0000000000001314      0x999 parser.o
+ .debug_line    0x0000000000001cad      0x4c5 pcd_api.o
+ .debug_line    0x0000000000002172      0x8a3 process.o
+ .debug_line    0x0000000000002a15      0x3eb rules_db.o
+ .debug_line    0x0000000000002e00      0x424 timer.o
 
-.debug_frame    0x00000000      0x9f0
+.debug_frame
  *(.debug_frame)
- .debug_frame   0x00000000      0x170 condchk.o
- .debug_frame   0x00000170       0x7c errlog.o
- .debug_frame   0x000001ec       0x88 except.o
- .debug_frame   0x00000274       0x88 failact.o
- .debug_frame   0x000002fc       0xb0 main.o
- .debug_frame   0x000003ac       0x44 misc.o
- .debug_frame   0x000003f0      0x210 parser.o
- .debug_frame   0x00000600       0xb0 pcd_api.o
- .debug_frame   0x000006b0      0x164 process.o
- .debug_frame   0x00000814       0xd8 rules_db.o
- .debug_frame   0x000008ec      0x104 timer.o
 
-.debug_str      0x00000000     0x2550
+.debug_str      0x0000000000000000     0x2b22
  *(.debug_str)
- .debug_str     0x00000000      0xd58 condchk.o
-                                0xdf6 (size before relaxing)
- .debug_str     0x00000d58       0xea errlog.o
-                                0x3e5 (size before relaxing)
- .debug_str     0x00000e42      0x2ac except.o
-                                0x6f6 (size before relaxing)
- .debug_str     0x000010ee       0xe3 failact.o
-                                0x973 (size before relaxing)
- .debug_str     0x000011d1      0x14c main.o
-                                0x450 (size before relaxing)
- .debug_str     0x0000131d       0xb1 misc.o
-                                0x3c9 (size before relaxing)
- .debug_str     0x000013ce      0x71f parser.o
-                                0xf35 (size before relaxing)
- .debug_str     0x00001aed      0x2eb pcd_api.o
-                                0xc1f (size before relaxing)
- .debug_str     0x00001dd8      0x389 process.o
-                                0xdfc (size before relaxing)
- .debug_str     0x00002161      0x1aa rules_db.o
-                                0xad0 (size before relaxing)
- .debug_str     0x0000230b      0x245 timer.o
-                                0xba9 (size before relaxing)
+ .debug_str     0x0000000000000000      0xedc condchk.o
+                                        0xfae (size before relaxing)
+ .debug_str     0x0000000000000edc      0x154 errlog.o
+                                        0x4dc (size before relaxing)
+ .debug_str     0x0000000000001030      0x343 except.o
+                                        0x908 (size before relaxing)
+ .debug_str     0x0000000000001373      0x10d failact.o
+                                        0xb0c (size before relaxing)
+ .debug_str     0x0000000000001480      0x2cf main.o
+                                        0x6fd (size before relaxing)
+ .debug_str     0x000000000000174f       0xe9 misc.o
+                                        0x4a6 (size before relaxing)
+ .debug_str     0x0000000000001838      0x7a7 parser.o
+                                       0x116b (size before relaxing)
+ .debug_str     0x0000000000001fdf      0x408 pcd_api.o
+                                        0xecc (size before relaxing)
+ .debug_str     0x00000000000023e7      0x417 process.o
+                                       0x127b (size before relaxing)
+ .debug_str     0x00000000000027fe      0x13b rules_db.o
+                                        0xc41 (size before relaxing)
+ .debug_str     0x0000000000002939      0x1e9 timer.o
+                                        0xd0d (size before relaxing)
 
-.debug_loc      0x00000000     0x3a36
+.debug_loc      0x0000000000000000     0x585f
  *(.debug_loc)
- .debug_loc     0x00000000      0x33d condchk.o
- .debug_loc     0x0000033d      0x18b errlog.o
- .debug_loc     0x000004c8      0x2e1 except.o
- .debug_loc     0x000007a9      0x16b failact.o
- .debug_loc     0x00000914      0x2fd main.o
- .debug_loc     0x00000c11       0x69 misc.o
- .debug_loc     0x00000c7a      0xedf parser.o
- .debug_loc     0x00001b59      0x5e9 pcd_api.o
- .debug_loc     0x00002142      0xd3c process.o
- .debug_loc     0x00002e7e      0x456 rules_db.o
- .debug_loc     0x000032d4      0x762 timer.o
+ .debug_loc     0x0000000000000000      0x41a condchk.o
+ .debug_loc     0x000000000000041a      0x12b errlog.o
+ .debug_loc     0x0000000000000545      0x566 except.o
+ .debug_loc     0x0000000000000aab       0xfa failact.o
+ .debug_loc     0x0000000000000ba5      0x1f8 main.o
+ .debug_loc     0x0000000000000d9d       0x18 misc.o
+ .debug_loc     0x0000000000000db5     0x1e8b parser.o
+ .debug_loc     0x0000000000002c40      0x96e pcd_api.o
+ .debug_loc     0x00000000000035ae     0x1483 process.o
+ .debug_loc     0x0000000000004a31      0x5d8 rules_db.o
+ .debug_loc     0x0000000000005009      0x856 timer.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -695,18 +845,21 @@ LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0xa00
+.debug_ranges   0x0000000000000000      0xd10
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x30 condchk.o
- .debug_ranges  0x00000030       0x30 errlog.o
- .debug_ranges  0x00000060       0x80 except.o
- .debug_ranges  0x000000e0       0x18 failact.o
- .debug_ranges  0x000000f8       0x78 main.o
- .debug_ranges  0x00000170      0x348 parser.o
- .debug_ranges  0x000004b8       0x50 pcd_api.o
- .debug_ranges  0x00000508      0x230 process.o
- .debug_ranges  0x00000738       0x98 rules_db.o
- .debug_ranges  0x000007d0      0x230 timer.o
+ .debug_ranges  0x0000000000000000       0x40 condchk.o
+ .debug_ranges  0x0000000000000040       0x60 errlog.o
+ .debug_ranges  0x00000000000000a0       0xd8 except.o
+ .debug_ranges  0x0000000000000178       0x30 failact.o
+ .debug_ranges  0x00000000000001a8       0xb0 main.o
+ .debug_ranges  0x0000000000000258      0x460 parser.o
+ .debug_ranges  0x00000000000006b8       0xb0 pcd_api.o
+ .debug_ranges  0x0000000000000768      0x360 process.o
+ .debug_ranges  0x0000000000000ac8       0xe0 rules_db.o
+ .debug_ranges  0x0000000000000ba8      0x168 timer.o
+
+.debug_macro
+ *(.debug_macro)
 
 .gnu.attributes
  *(.gnu.attributes)
@@ -715,4 +868,4 @@ LOAD /usr/local/lib/mbgcc/bin/../microblazeel-xilinx-linux-gnu/sys-root/usr/lib/
  *(.note.GNU-stack)
  *(.gnu_debuglink)
  *(.gnu.lto_*)
-OUTPUT(pcd elf32-microblazeel)
+OUTPUT(pcd elf32-i386)
