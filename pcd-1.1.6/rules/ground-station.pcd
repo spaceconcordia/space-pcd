@@ -1,9 +1,9 @@
 ############################################################################
-# ground-station.pcd: Top level PCD script for a product
-#
+# ground-station.pcd: Top level PCD script for ground-station
+# 
 ############################################################################
 RULE = GND_COMMANDER
-START_COND = RULE_COMPLETED,SYSTEM_LASTRULE
+START_COND = NONE
 COMMAND = /usr/bin/ground-commander
 SCHED = NICE,0
 DAEMON = NO
@@ -14,7 +14,7 @@ ACTIVE = YES
 
 #################################################################
 RULE = COMPONENT_NETMAN
-START_COND = RULE_COMPLETED,GND_COMMANDER
+START_COND = NONE
 COMMAND = /usr/bin/gnd
 SCHED = NICE,0
 DAEMON = NO
