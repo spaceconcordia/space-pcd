@@ -14,7 +14,7 @@ ACTIVE = YES
 
 #################################################################
 RULE = COMPONENT_NETMAN
-START_COND = RULE_COMPLETED,COMPONENT_APPRUN
+START_COND = RULE_COMPLETED,GND_COMMANDER
 COMMAND = /usr/bin/gnd
 SCHED = NICE,0
 DAEMON = NO
