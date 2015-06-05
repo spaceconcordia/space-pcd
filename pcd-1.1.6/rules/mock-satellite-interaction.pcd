@@ -24,6 +24,17 @@ END_COND_TIMEOUT = -1
 FAILURE_ACTION = RESTART
 ACTIVE = YES
 
+#################################################################
+RULE = MOCK_LOG_ROTATION
+START_COND = NONE
+COMMAND = /usr/bin/cs1_log_rotation.sh
+SCHED = NICE,0
+DAEMON = NO
+END_COND = NONE
+END_COND_TIMEOUT = -1
+FAILURE_ACTION = RESTART
+ACTIVE = YES
+
 ############################################################################
 # ground-station.pcd: TODO wish we could load multiple rule files at once
 #
