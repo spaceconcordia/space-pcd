@@ -1,4 +1,4 @@
-ipc.o: /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/ipc/src/ipc.c \
- /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/ipc/include/system_types.h \
- /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/ipc/include/ipc.h \
- /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/ipc/include/system_types.h
+ipc.o: /home/spaceconcordia/CONSAT1/space-pcd/pcd-1.1.6/ipc/src/ipc.c \
+ /home/spaceconcordia/CONSAT1/space-pcd/pcd-1.1.6/ipc/include/system_types.h \
+ /home/spaceconcordia/CONSAT1/space-pcd/pcd-1.1.6/ipc/include/ipc.h \
+ /home/spaceconcordia/CONSAT1/space-pcd/pcd-1.1.6/ipc/include/system_types.h

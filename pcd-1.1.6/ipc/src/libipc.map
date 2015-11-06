@@ -342,13 +342,14 @@ LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x0000000000000000       0x24
+.comment        0x0000000000000000       0x4d
  *(.comment)
- .comment       0x0000000000000000       0x24 /usr/lib/gcc/i686-linux-gnu/4.8/crtbeginS.o
+ .comment       0x0000000000000000       0x29 /usr/lib/gcc/i686-linux-gnu/4.8/crtbeginS.o
+                                         0x2a (size before relaxing)
+ .comment       0x0000000000000000       0x2a ipc.o
+ .comment       0x0000000000000029       0x24 /usr/lib/i386-linux-gnu/libc_nonshared.a(stack_chk_fail_local.oS)
                                          0x25 (size before relaxing)
- .comment       0x0000000000000000       0x25 ipc.o
- .comment       0x0000000000000000       0x25 /usr/lib/i386-linux-gnu/libc_nonshared.a(stack_chk_fail_local.oS)
- .comment       0x0000000000000000       0x25 /usr/lib/gcc/i686-linux-gnu/4.8/crtendS.o
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/i686-linux-gnu/4.8/crtendS.o
 
 .debug
  *(.debug)
@@ -378,17 +379,17 @@ LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x403 ipc.o
 
-.debug_line     0x0000000000000000      0x601
+.debug_line     0x0000000000000000      0x60f
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000      0x601 ipc.o
+ .debug_line    0x0000000000000000      0x60f ipc.o
 
 .debug_frame
  *(.debug_frame)
 
-.debug_str      0x0000000000000000      0x974
+.debug_str      0x0000000000000000      0x97b
  *(.debug_str)
- .debug_str     0x0000000000000000      0x974 ipc.o
-                                        0xa52 (size before relaxing)
+ .debug_str     0x0000000000000000      0x97b ipc.o
+                                        0xa59 (size before relaxing)
 
 .debug_loc      0x0000000000000000      0xaf0
  *(.debug_loc)

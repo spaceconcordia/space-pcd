@@ -77,8 +77,8 @@ LOAD pcd_api.o
 LOAD process.o
 LOAD rules_db.o
 LOAD timer.o
-LOAD /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/ipc/src/libipc.so
-LOAD /home/vagrant/CONSAT1/space-pcd/pcd-1.1.6/pcd/src/pcdapi/src/libpcd.so
+LOAD /home/spaceconcordia/CONSAT1/space-pcd/pcd-1.1.6/ipc/src/libipc.so
+LOAD /home/spaceconcordia/CONSAT1/space-pcd/pcd-1.1.6/pcd/src/pcdapi/src/libpcd.so
 LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/librt.so
 LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/libc.so
 START GROUP
@@ -685,23 +685,24 @@ LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x0000000000000000       0x24
+.comment        0x0000000000000000       0x4d
  *(.comment)
- .comment       0x0000000000000000       0x24 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ .comment       0x0000000000000000       0x29 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+                                         0x2a (size before relaxing)
+ .comment       0x0000000000000000       0x2a condchk.o
+ .comment       0x0000000000000000       0x2a errlog.o
+ .comment       0x0000000000000000       0x2a except.o
+ .comment       0x0000000000000000       0x2a failact.o
+ .comment       0x0000000000000000       0x2a main.o
+ .comment       0x0000000000000000       0x2a misc.o
+ .comment       0x0000000000000000       0x2a parser.o
+ .comment       0x0000000000000000       0x2a pcd_api.o
+ .comment       0x0000000000000000       0x2a process.o
+ .comment       0x0000000000000000       0x2a rules_db.o
+ .comment       0x0000000000000000       0x2a timer.o
+ .comment       0x0000000000000029       0x24 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
                                          0x25 (size before relaxing)
- .comment       0x0000000000000000       0x25 condchk.o
- .comment       0x0000000000000000       0x25 errlog.o
- .comment       0x0000000000000000       0x25 except.o
- .comment       0x0000000000000000       0x25 failact.o
- .comment       0x0000000000000000       0x25 main.o
- .comment       0x0000000000000000       0x25 misc.o
- .comment       0x0000000000000000       0x25 parser.o
- .comment       0x0000000000000000       0x25 pcd_api.o
- .comment       0x0000000000000000       0x25 process.o
- .comment       0x0000000000000000       0x25 rules_db.o
- .comment       0x0000000000000000       0x25 timer.o
- .comment       0x0000000000000000       0x25 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
- .comment       0x0000000000000000       0x25 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
 
 .debug
  *(.debug)
@@ -771,47 +772,47 @@ LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
  .debug_abbrev  0x0000000000001f5c      0x3fe rules_db.o
  .debug_abbrev  0x000000000000235a      0x436 timer.o
 
-.debug_line     0x0000000000000000     0x3224
+.debug_line     0x0000000000000000     0x32e8
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000      0x427 condchk.o
- .debug_line    0x0000000000000427      0x279 errlog.o
- .debug_line    0x00000000000006a0      0x3db except.o
- .debug_line    0x0000000000000a7b      0x299 failact.o
- .debug_line    0x0000000000000d14      0x3d6 main.o
- .debug_line    0x00000000000010ea      0x22a misc.o
- .debug_line    0x0000000000001314      0x999 parser.o
- .debug_line    0x0000000000001cad      0x4c5 pcd_api.o
- .debug_line    0x0000000000002172      0x8a3 process.o
- .debug_line    0x0000000000002a15      0x3eb rules_db.o
- .debug_line    0x0000000000002e00      0x424 timer.o
+ .debug_line    0x0000000000000000      0x43c condchk.o
+ .debug_line    0x000000000000043c      0x287 errlog.o
+ .debug_line    0x00000000000006c3      0x3e9 except.o
+ .debug_line    0x0000000000000aac      0x2a7 failact.o
+ .debug_line    0x0000000000000d53      0x3eb main.o
+ .debug_line    0x000000000000113e      0x23f misc.o
+ .debug_line    0x000000000000137d      0x9a7 parser.o
+ .debug_line    0x0000000000001d24      0x4e1 pcd_api.o
+ .debug_line    0x0000000000002205      0x8b8 process.o
+ .debug_line    0x0000000000002abd      0x3f9 rules_db.o
+ .debug_line    0x0000000000002eb6      0x432 timer.o
 
 .debug_frame
  *(.debug_frame)
 
-.debug_str      0x0000000000000000     0x2b22
+.debug_str      0x0000000000000000     0x2b6f
  *(.debug_str)
- .debug_str     0x0000000000000000      0xedc condchk.o
-                                        0xfae (size before relaxing)
- .debug_str     0x0000000000000edc      0x154 errlog.o
-                                        0x4dc (size before relaxing)
- .debug_str     0x0000000000001030      0x343 except.o
-                                        0x908 (size before relaxing)
- .debug_str     0x0000000000001373      0x10d failact.o
-                                        0xb0c (size before relaxing)
- .debug_str     0x0000000000001480      0x2cf main.o
-                                        0x6fd (size before relaxing)
- .debug_str     0x000000000000174f       0xe9 misc.o
-                                        0x4a6 (size before relaxing)
- .debug_str     0x0000000000001838      0x7a7 parser.o
-                                       0x116b (size before relaxing)
- .debug_str     0x0000000000001fdf      0x408 pcd_api.o
-                                        0xecc (size before relaxing)
- .debug_str     0x00000000000023e7      0x417 process.o
-                                       0x127b (size before relaxing)
- .debug_str     0x00000000000027fe      0x13b rules_db.o
-                                        0xc41 (size before relaxing)
- .debug_str     0x0000000000002939      0x1e9 timer.o
-                                        0xd0d (size before relaxing)
+ .debug_str     0x0000000000000000      0xee3 condchk.o
+                                        0xfb5 (size before relaxing)
+ .debug_str     0x0000000000000ee3      0x15b errlog.o
+                                        0x4e3 (size before relaxing)
+ .debug_str     0x000000000000103e      0x34a except.o
+                                        0x90f (size before relaxing)
+ .debug_str     0x0000000000001388      0x114 failact.o
+                                        0xb13 (size before relaxing)
+ .debug_str     0x000000000000149c      0x2d6 main.o
+                                        0x704 (size before relaxing)
+ .debug_str     0x0000000000001772       0xf0 misc.o
+                                        0x4ad (size before relaxing)
+ .debug_str     0x0000000000001862      0x7ae parser.o
+                                       0x1172 (size before relaxing)
+ .debug_str     0x0000000000002010      0x40f pcd_api.o
+                                        0xed3 (size before relaxing)
+ .debug_str     0x000000000000241f      0x41e process.o
+                                       0x1282 (size before relaxing)
+ .debug_str     0x000000000000283d      0x142 rules_db.o
+                                        0xc48 (size before relaxing)
+ .debug_str     0x000000000000297f      0x1f0 timer.o
+                                        0xd14 (size before relaxing)
 
 .debug_loc      0x0000000000000000     0x585f
  *(.debug_loc)

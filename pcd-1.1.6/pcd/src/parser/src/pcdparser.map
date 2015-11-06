@@ -452,16 +452,17 @@ LOAD /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x0000000000000000       0x24
+.comment        0x0000000000000000       0x4d
  *(.comment)
- .comment       0x0000000000000000       0x24 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+ .comment       0x0000000000000000       0x29 /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o
+                                         0x2a (size before relaxing)
+ .comment       0x0000000000000000       0x2a graph.o
+ .comment       0x0000000000000000       0x2a main.o
+ .comment       0x0000000000000000       0x2a outputhdr.o
+ .comment       0x0000000000000000       0x2a parser.o
+ .comment       0x0000000000000029       0x24 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
                                          0x25 (size before relaxing)
- .comment       0x0000000000000000       0x25 graph.o
- .comment       0x0000000000000000       0x25 main.o
- .comment       0x0000000000000000       0x25 outputhdr.o
- .comment       0x0000000000000000       0x25 parser.o
- .comment       0x0000000000000000       0x25 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
- .comment       0x0000000000000000       0x25 /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o
 
 .debug
  *(.debug)
